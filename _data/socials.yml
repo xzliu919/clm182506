@@ -2,10 +2,10 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
-email: you@example.com # ← 改成你的邮箱
-github_username: xzliu919 # ← 你的 GitHub 用户名
-# orcid_id: 0000-0000-0000-0000 # ← 你的 ORCID（有就取消注释并填写）
-# scholar_userid: # ← Google Scholar ID（scholar.google.com 上 user= 后面那串）
-# research_gate_profile: # ← ResearchGate 个人页
-# linkedin_username: # ← LinkedIn 用户名
+email: clm182506@zju.edu.cn # your email address
+github_username: xzliu919 # your GitHub user name
+orcid_id: 0009-0002-6347-5196 # your ORCID ID
+# scholar_userid: # your Google Scholar ID (scholar.google.com -> user=XXXX)
+# research_gate_profile: # your ResearchGate profile
+# linkedin_username: # your LinkedIn user name
 rss_icon: true # comment this line to hide the RSS icon

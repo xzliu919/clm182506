@@ -1,47 +1,88 @@
 cv:
-  name: Your Name ｜ 你的名字
-  label: PhD Student / Researcher ｜ 博士研究生 / 科研人员
-  email: you@example.com
+  name: Linmei Chen
+  label: PhD Student in Vegetable Science
+  email: clm182506@zju.edu.cn
   location: Hangzhou, China
   image: ""
   summary: >-
-    研究方向：花卉（月季/蔷薇）次生代谢与转录调控；葫芦科作物抗逆与品质性状。
-    Research on ornamental flowers (rose) and cucurbit crops.
+    PhD student at Zhejiang University working on the molecular mechanisms of ornamental and
+    stress-tolerance traits in horticultural crops — flower pigmentation and abiotic stress
+    tolerance in Rosa, and stress tolerance in Cucurbitaceae crops.
 
   social_networks:
     - network: GitHub
       username: xzliu919
+    - network: ORCID
+      username: 0009-0002-6347-5196
 
   sections:
     Education:
-      - institution: Zhejiang A&F University ｜ 浙江农林大学
+      - institution: Zhejiang University
         location: Hangzhou, China
-        area: Horticulture ｜ 园艺学
-        studyType: PhD ｜ 博士
-        start_date: 20XX
+        area: Vegetable Science
+        studyType: PhD
+        start_date: 2023.9
         end_date: present
-        highlights:
-          - Replace with your details. ｜ 请替换为你的信息。
-      - institution: Zhejiang A&F University ｜ 浙江农林大学
+      - institution: Zhejiang A&F University
         location: Hangzhou, China
-        area: Horticulture ｜ 园艺学
-        studyType: MSc ｜ 硕士
-        start_date: 20XX
-        end_date: 20XX
+        area: Horticulture
+        studyType: MSc
+        start_date: 2020.9
+        end_date: 2023.6
+      - institution: Shandong Agricultural University
+        location: Tai'an, China
+        area: Plant Science and Technology
+        studyType: BSc
+        start_date: 2016.9
+        end_date: 2020.7
 
     Research Interests:
-      - name: Ornamental flowers ｜ 花卉
-        keywords: "Rose, secondary metabolism, transcription factor ｜ 月季、次生代谢、转录因子"
-      - name: Cucurbitaceae crops ｜ 葫芦科作物
-        keywords: "Stress tolerance, quality traits ｜ 抗逆、品质性状"
+      - name: Floral ornamental traits
+        keywords: "Rose, anthocyanin, proanthocyanidin, MYB transcription factors, flower color"
+      - name: Stress tolerance in Rosa
+        keywords: "Cold, salt and drought tolerance, transcription factors, ROS homeostasis"
+      - name: Cucurbitaceae stress biology
+        keywords: "Cucumber, melon, pumpkin, watermelon, stress tolerance"
 
     Awards:
-      - title: Example Award ｜ 示例奖项
-        date: 20XX
-        awarder: Example Organization
+      - title: Zhejiang Provincial Excellent Master's Thesis
+        date: 2023
+        awarder: Zhejiang Provincial Department of Education
+
+    Publications:
+      - title: The RcDREB1E-RcMYB28 module improves drought tolerance in Rosa chinensis via RcLAR/RcCORA1-mediated proanthocyanidin biosynthesis and stress responses
+        authors:
+          - Yingjie Zhou, Linmei Chen, Huanyu Zhang, Yeni Chen, Jingjing Xin, Wen Chen, Yongyi Cui, Yuxiao Shen, Ping Luo
+        publisher: The Plant Journal
+        releaseDate: 2026
+      - title: ERF54 regulates cold tolerance in Rosa multiflora through DREB/COR signalling pathways
+        authors:
+          - Linmei Chen, Yeni Chen, Huanyu Zhang, Yuxiao Shen, Yongyi Cui, Ping Luo
+        publisher: Plant, Cell & Environment
+        releaseDate: 2024
+      - title: A feedback loop comprising RhMYB114 and RhMYB16 regulates anthocyanin accumulation and tissue acidification in Rosa hybrida
+        authors:
+          - Yeni Chen, Guoyuan Shao, Linmei Chen, Huanyu Zhang, Yongyi Cui, Ping Luo
+        publisher: Horticultural Plant Journal
+        releaseDate: 2024
+      - title: RhMYB1 and RhMYB123 form a positive feedback loop to regulate the proanthocyanidin biosynthesis in rose
+        authors:
+          - Linmei Chen, Yeni Chen, Yuxiao Shen, Wen Xing, Yongyi Cui, Ping Luo
+        publisher: Industrial Crops and Products
+        releaseDate: 2023
+      - title: A Na+/H+ antiporter gene from Rosa multiflora (RmNHX2) functions in salt tolerance via modulating ROS levels and ion homeostasis
+        authors:
+          - Haiyan Luo, Yuxiao Shen, Linmei Chen, Yongyi Cui, Ping Luo
+        publisher: Horticulturae
+        releaseDate: 2023
+      - title: RmZAT10, a novel Cys2/His2 zinc finger transcription factor of Rosa multiflora, functions in cold tolerance through modulation of proline biosynthesis and ROS homeostasis
+        authors:
+          - Ping Luo, Linmei Chen, Yeni Chen, Yuxiao Shen, Yongyi Cui
+        publisher: Environmental and Experimental Botany
+        releaseDate: 2022
 
     Languages:
-      - name: Chinese ｜ 中文
-        summary: "Native ｜ 母语"
-      - name: English ｜ 英语
-        summary: "Fluent ｜ 熟练"
+      - name: Chinese
+        summary: "Native"
+      - name: English
+        summary: "Fluent"

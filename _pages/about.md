@@ -17,10 +17,11 @@ latest_posts:
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
 
 :root{
-  --clm-bg:#121615; --clm-panel:#1A201E; --clm-text:#E6EBE9; --clm-muted:#9FB0AB;
-  --clm-teal:#5CC4B2; --clm-orange:#E79A62; --clm-line:rgba(255,255,255,.08);
+  --clm-bg:#F6F2E9; --clm-panel:#FFFFFF; --clm-text:#20302E; --clm-muted:#5F6F6B;
+  --clm-teal:#1F7A6B; --clm-orange:#B85C1E; --clm-blue:#1B4F9C; --clm-line:rgba(32,48,46,.12);
 }
 /* ---- hide al-folio theme chrome, take over the page ---- */
+html{color-scheme:light;}
 html,body{background:var(--clm-bg)!important;color:var(--clm-text)!important;}
 #navbar,footer.fixed-bottom,.progress{display:none!important;}
 body.fixed-top-nav{padding-top:0!important;}
@@ -44,11 +45,19 @@ a:hover{text-decoration:underline;}
 #clm p{margin:0 0 14px;color:var(--clm-muted);}
 #clm strong{color:var(--clm-text);}
 
+/* ---- Zhejiang University logo ---- */
+#clm .zju{display:inline-block;vertical-align:middle;}
+#clm .brand-logo{height:26px;width:26px;margin-right:9px;vertical-align:middle;}
+#clm .zju-badge{height:52px;width:52px;flex:0 0 auto;margin-right:14px;}
+#clm .row-logo{height:22px;width:22px;margin-right:8px;vertical-align:-4px;}
+#clm .foot-logo{height:20px;width:20px;margin-right:8px;vertical-align:-4px;opacity:.85;}
+#clm .zju-watermark{position:absolute;right:0;top:6px;width:210px;height:210px;opacity:.07;pointer-events:none;user-select:none;}
+
 /* ---- nav ---- */
-#clm .nav{position:sticky;top:0;z-index:50;background:rgba(18,22,21,.86);backdrop-filter:blur(10px);
+#clm .nav{position:sticky;top:0;z-index:50;background:rgba(246,242,233,.9);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--clm-line);}
 #clm .nav .wrap{display:flex;align-items:center;gap:22px;height:60px;}
-#clm .brand{font-family:Fraunces,serif;font-size:19px;color:var(--clm-text);font-weight:600;}
+#clm .brand{font-family:Fraunces,serif;font-size:19px;color:var(--clm-text);font-weight:600;display:inline-flex;align-items:center;}
 #clm .nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;}
 #clm .nav .links a{color:var(--clm-muted);font-size:14.5px;}
 #clm .nav .links a:hover{color:var(--clm-text);text-decoration:none;}
@@ -57,19 +66,22 @@ a:hover{text-decoration:underline;}
 #lang-toggle:hover{border-color:var(--clm-teal);}
 
 /* ---- hero ---- */
-#clm .hero{display:flex;gap:36px;align-items:flex-start;padding-top:56px;border-top:0;}
-#clm .portrait{width:210px;height:210px;object-fit:cover;border-radius:16px;flex:0 0 auto;background:var(--clm-panel);}
+#clm .hero{position:relative;display:flex;gap:36px;align-items:flex-start;padding-top:56px;border-top:0;}
+#clm .portrait{width:210px;height:210px;object-fit:cover;border-radius:16px;flex:0 0 auto;background:var(--clm-panel);
+  border:1px solid var(--clm-line);}
 #clm .eyebrow{color:var(--clm-orange);text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;font-weight:600;margin:2px 0 10px;}
-#clm .affil{color:var(--clm-muted);margin:0 0 6px;font-size:15.5px;}
+#clm .affil-row{display:flex;align-items:center;margin:6px 0 18px;}
+#clm .affil{color:var(--clm-muted);margin:0;font-size:15.5px;line-height:1.5;}
 #clm .pills{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:18px 0 0;}
 #clm .pill{display:inline-block;padding:8px 16px;border-radius:999px;font-size:14px;background:var(--clm-panel);
   border:1px solid var(--clm-line);color:var(--clm-text);}
 #clm .pill:hover{text-decoration:none;border-color:var(--clm-teal);}
-#clm .pill.primary{background:var(--clm-teal);color:#121615;border-color:var(--clm-teal);font-weight:600;}
+#clm .pill.primary{background:var(--clm-teal);color:#FFFFFF;border-color:var(--clm-teal);font-weight:600;}
 
 /* ---- research cards ---- */
 #clm .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-#clm .card{background:var(--clm-panel);border:1px solid var(--clm-line);border-radius:14px;padding:22px;}
+#clm .card{background:var(--clm-panel);border:1px solid var(--clm-line);border-radius:14px;padding:22px;
+  box-shadow:0 1px 2px rgba(32,48,46,.04);}
 #clm .card .num{font-family:Fraunces,serif;color:var(--clm-orange);font-size:15px;font-weight:600;margin-bottom:10px;}
 #clm .card p{margin:0;font-size:14.5px;}
 
@@ -93,13 +105,14 @@ a:hover{text-decoration:underline;}
 #clm .rows .when{color:var(--clm-orange);flex:0 0 132px;font-variant-numeric:tabular-nums;font-size:14.5px;}
 #clm .rows .what{color:var(--clm-muted);font-size:15px;}
 
-#clm footer{padding:40px 0 60px;color:var(--clm-muted);font-size:13.5px;border-top:1px solid var(--clm-line);}
+#clm footer{padding:40px 0 60px;color:var(--clm-muted);font-size:13.5px;border-top:1px solid var(--clm-line);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
 
 @media(max-width:820px){
   #clm .cards{grid-template-columns:1fr;}
   #clm .hero{flex-direction:column;}
   #clm .nav .links{display:none;}
   #clm h1{font-size:38px;}
+  #clm .zju-watermark{display:none;}
 }
 /* language switching: default English */
 .lang-zh{display:none;}
@@ -112,7 +125,7 @@ html[data-lang="zh"] #clm .lang-zh{display:block;}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top">Linmei Chen</a>
+    <a class="brand" href="#top"><img class="zju brand-logo" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="Zhejiang University" loading="lazy">Linmei Chen</a>
     <div class="links">
       <a href="#research"><span class="lang-en">Research</span><span class="lang-zh">研究方向</span></a>
       <a href="#news"><span class="lang-en">News</span><span class="lang-zh">动态</span></a>
@@ -125,12 +138,18 @@ html[data-lang="zh"] #clm .lang-zh{display:block;}
 </header>
 
 <section class="hero wrap" id="top">
+  <img class="zju-watermark" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="" aria-hidden="true" loading="lazy">
   <img class="portrait" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Linmei Chen">
   <div>
     <p class="eyebrow"><span class="lang-en">PhD Student · Zhejiang University</span><span class="lang-zh">博士研究生 · 浙江大学</span></p>
     <h1><span class="lang-en">Linmei Chen</span><span class="lang-zh">陈林妹</span></h1>
-    <p class="affil lang-en">Institute of Vegetable Science, Zhejiang University<br>Hangzhou, China</p>
-    <p class="affil lang-zh">浙江大学 蔬菜学<br>中国 · 杭州</p>
+    <div class="affil-row">
+      <img class="zju zju-badge" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="Zhejiang University" loading="lazy">
+      <div>
+        <p class="affil lang-en">Institute of Vegetable Science, Zhejiang University<br>Hangzhou, China</p>
+        <p class="affil lang-zh">浙江大学 · 蔬菜学<br>中国 · 杭州</p>
+      </div>
+    </div>
     <p class="lang-en">I am a PhD student in Vegetable Science at Zhejiang University. My research explores the molecular mechanisms underlying ornamental and stress-responsive traits in horticultural crops — from flower pigmentation and abiotic stress tolerance in <em>Rosa</em>, to stress tolerance in Cucurbitaceae crops.</p>
     <p class="lang-zh">我是浙江大学蔬菜学博士研究生，主要研究园艺作物观赏性状与抗逆性状的分子机制——涵盖蔷薇科（月季/蔷薇）的花色与抗逆，以及葫芦科作物的抗逆机制。</p>
     <ul class="pills">
@@ -215,15 +234,16 @@ html[data-lang="zh"] #clm .lang-zh{display:block;}
 <section class="wrap" id="education">
   <h2><span class="lang-en">Education</span><span class="lang-zh">教育经历</span></h2>
   <ul class="rows">
-    <li><span class="when">2023.9 – 2027.6</span><span class="what lang-en">PhD in Vegetable Science, Zhejiang University</span><span class="what lang-zh">博士 · 蔬菜学 · 浙江大学</span></li>
+    <li><span class="when">2023.9 – 2027.6</span><span class="what lang-en"><img class="zju row-logo" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="Zhejiang University" loading="lazy">PhD in Vegetable Science, Zhejiang University</span><span class="what lang-zh"><img class="zju row-logo" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="浙江大学" loading="lazy">博士 · 蔬菜学 · 浙江大学</span></li>
     <li><span class="when">2020.9 – 2023.6</span><span class="what lang-en">MSc in Horticulture, Zhejiang A&amp;F University</span><span class="what lang-zh">硕士 · 园艺学 · 浙江农林大学</span></li>
     <li><span class="when">2016.9 – 2020.7</span><span class="what lang-en">BSc in Plant Science and Technology, Shandong Agricultural University</span><span class="what lang-zh">本科 · 植物科学与技术 · 山东农业大学</span></li>
   </ul>
 </section>
 
 <footer class="wrap">
-  <span class="lang-en">© <span id="yr">2026</span> Linmei Chen · Built with al-folio &amp; GitHub Pages</span>
-  <span class="lang-zh">© <span>2026</span> 陈林妹 · 基于 al-folio 与 GitHub Pages 构建</span>
+  <img class="zju foot-logo" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/330px-Zhejiang_University_Logo.svg.png" alt="Zhejiang University" loading="lazy">
+  <span class="lang-en">© <span id="yr">2026</span> Linmei Chen · Zhejiang University · Built with al-folio &amp; GitHub Pages</span>
+  <span class="lang-zh">© <span>2026</span> 陈林妹 · 浙江大学 · 基于 al-folio 与 GitHub Pages 构建</span>
 </footer>
 
 </div>

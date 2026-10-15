@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Linmei Chen — PhD Student, Zhejiang University
+title: PhD Student, Zhejiang University
 permalink: /
 subtitle:
 profile:
